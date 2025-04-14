@@ -66,25 +66,32 @@ async function handleDelete(facultyId) {
 
    return (
     <div>
-            <h1>All Professors</h1>
 
+        <div>
+        <div className="group1">
+            <h1 className="h1-profs">FACULTY & STAFF</h1>
+            <h2 className="directory">Directory </h2>
+    
+        </div>
+        </div>
 
-             {localStorage.getItem("token") && ( 
-            <div>
+        <div className="test2">
+        {localStorage.getItem("token") && ( 
                 <button onClick={()=> navigate("/faculty/new")}>Add Faculty</button>
-            </div>
              )}
+   </div>
    
         <div>
 
-        
+       
             {allFaculty.length === 0 ? (
                 <p>faculty loading...</p>
             ) : (
-                <ul>
+                <div className="faculty-grid">
+                
             {facultyToDisplay.map( (faculty) => {
                 return(
-                    <li key= {faculty.id}>
+                    <div key= {faculty.id} className="faculty-card">
 
                         <div className="depTitle">
                         <h4>{faculty.name}</h4>
@@ -102,15 +109,15 @@ async function handleDelete(facultyId) {
                         </div>
 
 
-
-                         <div className="details">
+                       
+                         <div>
                          <Link to={`/faculty/${faculty.id}`}>
-                             <button>Faculty Details</button>
+                             <button className="fbutton1">Faculty Details</button>
                          </Link>   
                          </div>
                         
                          {localStorage.getItem("token") && (
-                            <div>
+                            <div className="details2">
  
                          <button onClick={() => navigate(`/faculty/edit/${faculty.id}`)}>
                              Edit Faculty
@@ -124,12 +131,15 @@ async function handleDelete(facultyId) {
 
     
                       
-                    </li>
+                    </div>
 
                 );
             })}
-                </ul>
+                
+                </div>
             )}
+            
+
         </div>
 
 

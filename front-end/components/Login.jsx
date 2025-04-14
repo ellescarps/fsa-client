@@ -76,9 +76,16 @@ async function handleSubmit(event) {
  return (
     <div>
 
-        <h6>Login</h6>
+      
+    <div className="logBox">
+        <div className="logContainer">
+                <div className="h6div">
+                     <h6>Login</h6>
+             </div>
+    
 
-        <form onSubmit={handleSubmit}>
+        <div>
+        <form className="loginForm" onSubmit={handleSubmit}>
         {emailError && <p style={{ color: "red" }}>{emailError}</p>}
             <label>
                 Email: 
@@ -95,6 +102,10 @@ async function handleSubmit(event) {
 
             <button type="submit">Login</button>
         </form>
+        </div>
+        </div>
+        </div>
+
 
         
 

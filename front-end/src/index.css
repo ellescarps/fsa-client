@@ -14,6 +14,10 @@ ul {
 
 /* Tablet & Laptop styles */
 @media screen and (min-width: 768px) {
+
+body {
+    background-color: rgb(182, 83, 167);
+  }
   
   .logo {
     background-image: url("magicphoto.jpg");
@@ -70,7 +74,7 @@ ul {
 
 
  a, button {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-decoration: none;
  }
@@ -82,9 +86,16 @@ ul {
 }
 
 .depCover1 img{
-  width: 90%;
-  height: 60px;
+  width: 97%;
+  height: 300px;
   object-fit: cover; 
+ 
+}
+
+.depTitle1 {
+  text-align: center;
+  margin-right:40px;
+  color: rgb(247, 214, 171);
 }
 
 .italic {
@@ -99,14 +110,534 @@ ul {
 }
 
 
-
-  
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
 }
 
-/* Big desktop styles */
+.faculty-card {
+  background-color:  rgb(246, 228, 228);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.faculty-card:hover {
+  transform: translateY(-5px);
+}
+
+.faculty-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.depTitle {
+  color: rgb(82, 0, 0);
+  text-align: center;
+}
+
+
+/*  */
+.h1-profs {
+  height: 10px;
+ color: rgb(82, 0, 0);
+ text-align: center;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.p-profs{
+ color: rgb(246, 236, 236);
+ text-align: center;
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.directory {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.art-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding:30px;
+  margin-bottom: 1.5rem;
+}
+
+.article1,
+.article2 {
+  flex: 1;
+  padding: 0.5rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+}
+
+.theatre {
+  margin-top: 1rem;
+  padding-bottom: 20px;
+}
+
+.musical-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.musical-grid img {
+  height: auto;
+  width: 15%;
+  border-radius: 6px;
+  border: 1px solid #999;
+}
+
+.p1-art {
+  text-align: center;
+  margin: 4px;
+  padding-right: 1px;
+}
+
+
+.art-img1 img {
+  width: 620px;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-bottom: 30px;
+  border: 5px solid #aaa;
+  border-radius: 76px;
+}
+
+.art-title{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.art-button {
+  margin-left: 360px;
+}
+
+.art-button2 {
+  margin-left: 390px;
+}
+
+.h1-drama {
+  text-align: center;
+  background-color: rgb(205, 190, 199);
+  border: inset 10px rgb(3, 1, 5);
+  padding: 10px;
+  margin:10px;
+  color: rgb(17, 8, 8);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.check{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: burlywood;
+  font-weight: 400;
+}
+
+.astro img {
+  width: 100%;
+  height: 400px;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+
+.single-container {
+  text-align: left;
+  color: rgb(82, 0, 0);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 1rem;
+  background-color: #e5d8dd; 
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 10px;
+}
+
+.faculty-content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap; /* allows stacking on small screens */
+}
+
+.p-title img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+}
+
+.descript2 {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* login form */
+
+.logBox{
+  margin-right:2000px;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.logContainer{
+  padding-top: 34px;
+  padding-left: 1670px;
+  animation: bounce 3s ease-in;
+}
+
+.h6div {
+  width: 135px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(99, 51, 51);
+  color:white;
+  font-size: 34px;
+  padding-left: 66px;
+  margin-bottom: 5px;
+  -webkit-text-stroke: 1px rgb(108, 60, 15);
+}
+
+.loginForm {
+  background-color: rgb(208, 208, 208);
+  border-radius: 15%;
+  padding: 25px;
+  margin-top: -44px;
+  display: inline-block;
+
+}
+
+
+
+.regCont {
+  padding-top: 34px;
+  padding-left: 1580px;
+  animation: bounce 3s ease-in;
+}
+
+.h3div{
+  width: 145px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(99, 51, 51);
+  color:white;
+  font-size: 34px;
+  padding-top: 5px;
+  padding-right: 49px;
+  padding-left: 48px;
+  padding-bottom: 9px;
+  margin-left: 50px;
+  margin-bottom: 0px;
+  -webkit-text-stroke: 1px rgb(108, 60, 15);
+}
+
+.formBox {
+  margin: 10px;
+}
+
+
+.registerForm {
+  background-color: rgb(208, 208, 208);
+  border-radius: 10%;
+  padding: 60px;
+  margin:30px;
+  display: inline-block;
+}
+
+.regbutton {
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+}
+
+/* add new faculty and add department buttons */
+
+.add-form{
+  background-color: rgb(208, 208, 208);
+  padding: 40px 50px;
+  margin: 10px;
+  max-width: 600px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-form input,
+.add-form textarea,
+.add-form select {
+  width: 100%;
+  padding: 16px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.add-form button {
+  background-color: #333;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-form button:hover {
+  background-color: #555;
+}
+
+.edit-form{
+  background-color: rgb(208, 208, 208);
+  padding: 40px 50px;
+  margin: 10px;
+  max-width: 600px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit-form input,
+.edit-form textarea,
+.edit-form select {
+  width: 100%;
+  padding: 16px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.edit-form button {
+  background-color: #333;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.edit-form button:hover {
+  background-color: #555;
+}
+
+.details {
+  display: flex;
+  gap:10px;
+}
+
+.details2 {
+  display: flex;
+  gap:10px;
+}
+
+.fbutton1{
+  padding:10px;
+  margin: 20px;
+}
+
+
+.acct {
+  color: white;
+  text-align: center;
+  background-color: rgb(38, 172, 172);
+  border: outset 8px rgba(221, 197, 197, 0.546);
+  padding: 10px;
+  margin:19px;
+
+}
+
+.acctp{
+  color: white;
+  text-align: center;
+  font-size: 90%;
+}
+
+.test {
+  text-align: center;
+}
+
+.test2 {
+  text-align: center;
+}
+
+.newspaper {
+  text-align: center;
+  background-color: rgb(205, 190, 199);
+  border: inset 10px rgb(3, 1, 5);
+  margin:10px;
+  color: rgb(17, 8, 8);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* single department with faculty */
+.align3 {
+  text-align: center;
+  color: rgb(82, 0, 0);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 1rem;
+  background-color: #e5d8dd; 
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 10px;
+  margin-left: 500px;
+}
+
+.depTitle3 h4 {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+}
+
+.dep-img img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  margin: 0.5rem auto 1.5rem auto;
+  padding-top: 10px;
+  display: block;
+}
+
+
+
+.facultyList3 h5 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 5px;
+  color: rgb(82, 0, 0);
+}
+
+.facultyList3 div {
+  background-color: #e5d8dd; 
+  margin: 10px;
+  padding: 25px;
+  border-radius: 40px;
+}
+
+.facultyList3 h6 {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  color: rgb(82, 0, 0);
+}
+
+
+.descript3 {
+  margin-top: 20px;
+  padding: 4px;
+  background-color: #c021b622;
+  border-radius: 10px;
+}
+
+.banner {
+  text-align: center;
+}
+
+.pbio {
+  color: rgb(82, 0, 0);
+  text-align: center;
+  border-radius: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+}
+
+
+
+/* GAP CHECK */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Big desktop styles
 @media screen and (min-width: 1440px) {
-  /* optional refinements */
-}
+  optional refinements */
+/* } */
 
 
 
@@ -184,7 +715,7 @@ body {
 
 .depTitle1 {
   width: 90%;
-  height: 20px;
+  height: 40%;
   text-align: center;
   color: rgb(247, 214, 171);
 }
@@ -207,4 +738,453 @@ body {
   cursor: pointer;
 }
 
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding: 1rem;
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.faculty-card {
+  background-color: rgb(246, 228, 228);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.faculty-card:hover {
+  transform: translateY(-5px);
+}
+
+.faculty-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.depTitle {
+  color: rgb(82, 0, 0);
+  text-align: center;
+}
+
+.h1-profs {
+  height: 10px;
+ color: rgb(82, 0, 0);
+ text-align: center;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.p-profs{
+ color: rgb(246, 236, 236);
+ text-align: center;
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.directory {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+}
+
+
+.newspaper {
+  text-align: center;
+  background-color: rgb(205, 190, 199);
+  border: inset 10px rgb(3, 1, 5);
+  margin:10px;
+  color: rgb(17, 8, 8);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.art-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding:10px;
+  margin-bottom: 1.5rem;
+}
+
+.article1,
+.article2 {
+  flex: 1;
+  padding: 0.5rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+}
+
+.theatre {
+  margin-top: 1rem;
+  padding:10px;
+}
+
+.musical-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.musical-grid img {
+  width: 45%;
+  border-radius: 6px;
+  border: 1px solid #999;
+}
+
+.p1-art {
+  margin: 4px;
+  padding-right: 1px;
+}
+
+.art-img1 img {
+  width: 120px;
+  float: left;
+  margin: 0 0 0.5rem 0.3rem;
+  border: 5px solid #aaa;
+  border-radius: 76px;
+}
+
+.art-title{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+
+.h1-drama {
+  text-align: center;
+  background-color: rgb(205, 190, 199);
+  border: inset 10px rgb(3, 1, 5);
+  padding: 10px;
+  margin:10px;
+  color: rgb(17, 8, 8);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.check{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: burlywood;
+  font-weight: 400;
+}
+
+.astro img {
+  width: 100%;
+  height: 400px;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.single-container {
+  text-align: center;
+  color: rgb(82, 0, 0);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 1rem;
+  background-color: #e5d8dd; 
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 10px;
+}
+
+
+.depTitle2{
+  color: rgb(82, 0, 0);
+}
+
+.faculty-content {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.descript2 {
+  margin-top: 1%;
+}
+
+/* single department with faculty */
+.align3 {
+  text-align: center;
+  color: rgb(82, 0, 0);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 1rem;
+  background-color: #e5d8dd; 
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 10px;
+}
+.depTitle3 h4 {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+}
+
+.dep-img img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  margin: 0.5rem auto 1.5rem auto;
+  padding-top: 10px;
+  display: block;
+}
+
+
+
+.facultyList3 h5 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 5px;
+  color: rgb(82, 0, 0);
+}
+
+.facultyList3 div {
+  background-color: #e5d8dd; 
+  margin: 10px;
+  padding: 25px;
+  border-radius: 40px;
+}
+
+.facultyList3 h6 {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  color: rgb(82, 0, 0);
+}
+
+
+.descript3 {
+  margin-top: 20px;
+  padding: 4px;
+  background-color: #c021b622;
+  border-radius: 10px;
+}
+
+.banner {
+  text-align: center;
+}
+
+.pbio {
+  color: rgb(82, 0, 0);
+  text-align: center;
+  border-radius: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* login form */
+
+.logBox{
+  margin-right:2000px;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.logContainer{
+  margin-right: 40px;
+  padding-top: 3px;
+  padding-left: 208px;
+  animation: bounce 3s ease-in;
+}
+
+.h6div {
+  width: 135px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(99, 51, 51);
+  color:white;
+  font-size: 34px;
+  padding-left: 66px;
+  margin-bottom: 5px;
+  -webkit-text-stroke: 1px rgb(108, 60, 15);
+}
+
+.loginForm {
+  background-color: rgb(208, 208, 208);
+  border-radius: 15%;
+  padding: 25px;
+  margin-top: -44px;
+  display: inline-block;
+
+}
+
+/* register form */
+.regCont {
+  height:1px;
+  width:4px;
+  padding: 200px;
+  margin-top:-200px;
+  animation: bounce 3s ease-in;
+}
+
+
+.h3div{
+  width: 135px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(99, 51, 51);
+  color:white;
+  font-size: 20px;
+  padding-top: 2px;
+  padding-right: 1px;
+  padding-left: 62px;
+  padding-bottom: 2px;
+  margin-bottom: 53px;
+  -webkit-text-stroke: 1px rgb(108, 60, 15);
+}
+
+.formBox {
+  padding: 10px;
+}
+ 
+.registerForm {
+  background-color: rgb(208, 208, 208);
+  border-radius: 15%;
+  padding: 25px;
+  margin-top: -44px;
+  display: inline-block;
+}
+
+.regbutton {
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+
+}
+
+
+/* add new faculty and add department buttons */
+
+.add-form{
+  background-color: rgb(208, 208, 208);
+  padding: 40px 50px;
+  margin: 10px;
+  max-width: 600px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-form input,
+.add-form textarea,
+.add-form select {
+  width: 100%;
+  padding: 16px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.add-form button {
+  background-color: #333;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-form button:hover {
+  background-color: #555;
+}
+
+.edit-form{
+  background-color: rgb(208, 208, 208);
+  padding: 40px 50px;
+  margin: 10px;
+  max-width: 600px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit-form input,
+.edit-form textarea,
+.edit-form select {
+  width: 100%;
+  padding: 16px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.edit-form button {
+  background-color: #333;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.edit-form button:hover {
+  background-color: #555;
+}
+
+.details {
+  display: flex;
+  gap:10px;
+}
+
+.details2 {
+  display: flex;
+  gap:10px;
+}
+
+.fbutton1{
+  padding:10px;
+  margin: 20px;
+}
+
+
+.acct {
+  color: white;
+  text-align: center;
+  background-color: rgb(38, 172, 172);
+  border: outset 8px rgba(221, 197, 197, 0.546);
+  padding: 10px;
+  margin:19px;
+
+}
+
+.acctp{
+  color: white;
+  text-align: center;
+  font-size: 90%;
+}
+
+.test {
+  text-align: center;
+}
+
+.test2 {
+  text-align: center;
+}
 }

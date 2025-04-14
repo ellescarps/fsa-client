@@ -67,7 +67,9 @@ if (error) {
 }
 
     return(
-        <>
+        <div>
+            <div className="acctback">
+            <div className="acct">
              <h1>Welcome!</h1>
 
              <div className="div-acct">
@@ -79,8 +81,11 @@ if (error) {
                     <p>Loading your account details...</p>
                 )}
             </div>
-
-        </>
+            </div>
+            <p className="acctp"> ✨account updates and article submissions coming soon...✨</p>
+            </div>    
+       
+        </div>
     )
 }
 

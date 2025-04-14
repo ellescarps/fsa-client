@@ -48,28 +48,28 @@ function EditFaculty() {
 
     return (
         <div>
-
+            <div className="edit-form">
             <form onSubmit={handleSubmit}>
             <h2>Edit Faculty</h2>
 
             <label> Name: </label>
             <input type="text" value={form.name} onChange={(e) => setForm({...form, name: e.target.value})} /> 
-
+            <br /> <br />
             <label> Bio: </label>
-            <textarea value={form.bio} onChange={(e) => setForm({...form, bio: e.target.value})} />
-
+            <textarea rows="30" cols="20" value={form.bio} onChange={(e) => setForm({...form, bio: e.target.value})} />
+            <br /> <br />
             <label> Contact Info: </label>
             <input type="text" value={form.contactInfo} onChange={(e) => setForm({...form, contactInfo: e.target.value})} />
-
+            <br /> <br />
             <label> Profile Image: </label>
             <input type="text" value={form.profileImage} onChange={(e) => setForm({...form, profileImage: e.target.value})} />
-
+            <br /> <br />
             <label> Department ID: </label>
             <input type="text" value={form.departmentId} onChange={(e) => setForm({...form, departmentId: e.target.value})} />
-
+            <br /> <br />
             <button type="submit"> Update Faculty </button>
             </form>
-       
+            </div>
         </div>
     );
 }

@@ -38,39 +38,41 @@ async function handleSubmit(e) {
 
     return (
         <div>
+
+            <div className="add-form">
             <h2> Add New Faculty </h2>
            
 
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label>Name</label>
+                    <label>Name:</label> 
                     <input type="text" value={name} onChange={(e) => setName(e.target.value)} required />
                 </div>
-
+                <br />
                 <div>
-                    <label> Bio </label>
+                    <label> Bio: </label>
                     <input type="text" value={bio} onChange={(e)=> setBio(e.target.value)} required />
                 </div>
-
+                <br />
                 <div>
-                    <label>Image</label>
+                    <label>Image:</label>
                     <textarea
                         value={profileImage}
                         onChange={(e) => setProfileImage(e.target.value)}
                         required
                     />
                 </div>
-
+                <br />
                 <div>
-                    <label> Contact Info </label>
+                    <label> Contact Info: </label>
                     <input type="text" value={contactInfo} onChange={(e) => setContactInfo(e.target.value)} />
                 </div> 
-
+                <br />
                 <div>
-                    <label>Department ID</label>
+                    <label>Department ID:</label>
                      <input type="text" value={departmentId} onChange={(e) => setDepartmentId(e.target.value)} required/>
                 </div>
-
+                <br />
                 <div>
                     <button>Add Faculty Member</button>
                 </div>
@@ -78,6 +80,7 @@ async function handleSubmit(e) {
 
 
             </form>
+            </div>
 
 
 

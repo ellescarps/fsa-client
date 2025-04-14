@@ -43,28 +43,33 @@ useEffect( () => {
 
 return  (
     <>
-       
-      <div className="depTitle">
-  {faculty && faculty.name ? (
-    <h4>{faculty.name}</h4>
-  ) : (
-    <p>Loading...</p>
-  )}
+       <div className="single-container">
+      <div className="depTitle2">
+        {faculty && faculty.name ? (
+         <h4>{faculty.name}</h4>
+           ) : (
+           <p>Loading...</p>
+               )}
+      </div>
+
+<div className="faculty-content">
+{faculty && faculty.profileImage && (
+  <div className="p-title">
+  <img src={faculty.profileImage} alt={`profile image of faculty: ${faculty.name}`} />
+  </div>
+)}
 </div>
 
-{faculty && faculty.profileImage && (
-  <img src={faculty.profileImage} alt={`profile image of faculty: ${faculty.name}`} />
-)}
 
-
-<div className="descript">
+<div className="descript4">
   {faculty && (
     <>
-      <p>Bio: {faculty.bio || "No bio available"}</p>
-      <p>Contact Info: {faculty.contactInfo || "No contact info available"}</p>
-      <p>Department ID: {faculty.departmentId || "No department info available"}</p>
+      <p className="pSingle"> <strong> Bio: </strong> {faculty.bio || "No bio available"}</p>
+      <p className="pSingle"> <strong>Contact Info:</strong> {faculty.contactInfo || "No contact info available"}</p>
+      <p className="pSingle"> <strong>Department ID:</strong> {faculty.departmentId || "No department info available"}</p>
     </>
   )}
+</div>
 </div>
 
 

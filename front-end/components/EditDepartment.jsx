@@ -47,26 +47,26 @@ function EditDepartment() {
 
     return (
         <div>
-
+            <div className="edit-form">
             <form onSubmit={handleSubmit}>
             <h2>Edit Department</h2>
 
-            <label> Name: </label>
+            <label> Name: </label> 
             <input type="text" value={form.name} onChange={(e) => setForm({...form, name: e.target.value})} /> 
-
+            <br /> <br />
             <label> Description: </label>
-            <textarea value={form.description} onChange={(e) => setForm({...form, description: e.target.value})} />
-
+            <textarea rows="30" cols="20" value={form.description} onChange={(e) => setForm({...form, description: e.target.value})} />
+            <br /> <br />
             <label> Contact Info: </label>
             <input type="text" value={form.contactInfo} onChange={(e) => setForm({...form, contactInfo: e.target.value})} />
-
+            <br /> <br />
             <label> Image: </label>
             <input type="text" value={form.image} onChange={(e) => setForm({...form, image: e.target.value})} />
 
-
-            <button type="submit"> Update department </button>
+            <br /> <br />
+            <button type="submit"> Update Department </button>
             </form>
-       
+            </div>
         </div>
     );
 }

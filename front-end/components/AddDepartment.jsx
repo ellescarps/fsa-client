@@ -37,34 +37,34 @@ async function handleSubmit(e) {
 
     return (
         <div>
+            <div className="add-form">
             <h2> Add New Department </h2>
            
 
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label>Name</label>
-                    <input type="text" value={name} onChange={(e) => setName(e.target.value)} required />
+                    <label>Name:</label> <br />
+                    <input type="text" value={name} onChange={(e) => setName(e.target.value)} required /> 
                 </div>
-
+                <br /> <br />
                 <div>
-                    <label> Description </label>
+                    <label> Description: </label>
                     <input type="text" value={description} onChange={(e)=> setDescription(e.target.value)} required />
                 </div>
-
+                <br /> <br />
                 <div>
-                    <label>Image</label>
+                    <label>Image:</label> 
                     <textarea
                         value={image}
                         onChange={(e) => setImage(e.target.value)}
                         required
                     />
                 </div>
-
+                <br /> 
                 <div>
-                    <label> Contact Info </label>
+                    <label> Contact Info: </label>
                     <input type="text" value={contactInfo} onChange={(e) => setContactInfo(e.target.value)} />
-                </div> 
-
+                </div>  <br /> <br />
                 <div>
                     <button>Add Department</button>
                 </div>
@@ -72,7 +72,7 @@ async function handleSubmit(e) {
 
 
             </form>
-
+            </div>
 
 
         </div>

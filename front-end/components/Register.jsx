@@ -88,23 +88,26 @@ const handleAuthenticateClick = () => {
 
 
     return(
-        <>
+        <div>
 
-             <h3>Register</h3>
+              <div className="regBox">
+                    
+            <div className="formBox">
+            <div className="regCont"> 
+                        <h3 className="h3div"> Register </h3>
 
-            <div>
             <form className="registerForm" onSubmit={handleSubmit}>
                     
                         {emailError && <p style={{ color: "red" }}>{emailError}</p>}
                         <label>
-                            Email:
+                            Email: { "" }
                             <input
                                 type="email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 placeholder="Email"
                             />
-                            <br />
+                            <br /> <br />
                         </label>
 
                         {passwordError && <p style={{ color: "red" }}>{passwordError}</p>}
@@ -135,18 +138,14 @@ const handleAuthenticateClick = () => {
                             </div>
                         </div>
                     </form>
+                    </div>
+                    </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-        </>
+            
+            
+            
+            
+    </div>
     );
 }
 

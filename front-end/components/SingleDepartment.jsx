@@ -48,25 +48,40 @@ if (!department) {
 
 
 return  (
-    <>
-        <div className="depTitle">
-                <h4>{department.name}</h4>
-        </div>
+    <div>
 
+        
         <div>
+
+        
+        <div className="dep-img">
         <img src={department.image} alt={`image of department: ${department.name}`}/>
         </div>
+        <div className="align3">
+        <div className="depTitle3">
+                <h4>{department.name}</h4>
+        </div>
+    
+
+        <div className="descript3">
+            <p> <strong>Description: </strong> {department.description} </p>
+            <p> <strong>Contact Info:</strong> {department.contactInfo} </p>
+        </div>
+        </div>
+        
+
+    
 
                 
           
-                <div className="facultyList">
-                    <h5>Meet Our Faculty</h5>
+                <div className="facultyList3">
+                    <h5>Meet Your Professors</h5>
                     {department.faculty && department.faculty.length > 0 ? (
                         department.faculty.map((professor) => (
                             <div key={professor.id}>
                                 <h6> Professor: {professor.name}</h6>
-                                <p>  <img src={professor.profileImage} alt="professor image" /> </p>
-                                <p> Bio: {professor.bio}</p>
+                                <p className="banner">  <img src={professor.profileImage} alt="professor image" /> </p>
+                                <p className="pbio"> <strong>About Me</strong> <br /> {professor.bio}</p>
                             </div>
                         ))
                     ) : (
@@ -77,13 +92,8 @@ return  (
 
 
 
-        <div className="descript">
-            <p> Description: {department.description} </p>
-            <p> Contact Info: {department.contactInfo} </p>
-        </div>
-        
-
-    </>
+    </div>
+    </div>
 );
 }
 

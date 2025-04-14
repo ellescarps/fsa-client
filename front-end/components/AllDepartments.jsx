@@ -67,11 +67,19 @@ async function handleDelete(departmentId) {
 
    return (
     <div>
-       
+
+<div>
+        <div className="group1">
+            <h1 className="h1-profs">ALL DEPARTMENTS</h1>
+            <h2 className="directory">Directory </h2>
+    
+        </div>
+        </div>
+       <div className="test">
        {localStorage.getItem("token") && (
-            <button onClick={() => navigate("/faculty/new")}>Add Faculty</button>
+            <button onClick={() => navigate("/departments/new")}>Add Department</button>
             )}
-   
+        </div>
             <div className="homebody">
 
             {allDepartments.length === 0 ? (
